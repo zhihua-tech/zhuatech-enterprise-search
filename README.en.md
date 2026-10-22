@@ -1,5 +1,7 @@
 [简体中文](README.md) | **English**
 
+2026-10-23 update: **Cross-source result canonicalization**. An authenticated, deterministic computation with a usable workbench, bounded input validation and regression tests. No external model calls or business-data writes. [Usage, API and limitations](docs/AI_PRACTICAL_UPGRADE_20261023.md).
+
 # ZhuaTech Enterprise Search
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for enterprise finance, planning, settlement, and risk control.

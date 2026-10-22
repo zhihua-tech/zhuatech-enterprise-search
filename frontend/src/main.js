@@ -3,3 +3,8 @@ import {createApp} from 'vue'
 import App from './App.vue'
 import './styles.css'
 createApp(App).mount('#app')
+import AiPracticalWorkbench from './components/AiPracticalWorkbench.vue'
+const workbenchHost=document.createElement('div')
+workbenchHost.id='zhuatech-practical-workbench'
+document.body.appendChild(workbenchHost)
+createApp(AiPracticalWorkbench).mount(workbenchHost)
