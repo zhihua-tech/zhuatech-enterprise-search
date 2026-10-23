@@ -1,0 +1,75 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    }
+  },
+  {
+    "patch": {
+      "tokenBudget": "199"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "contextHits": "#0"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    }
+  },
+  {
+    "patch": {
+      "tokenBudget": "1999"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "contextHits": "#9"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    }
+  },
+  {
+    "patch": {
+      "unauthorized": "90"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    }
+  },
+  {
+    "patch": {
+      "rerankLimit": "5"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "contextHits": "#5"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    }
+  }
+]
