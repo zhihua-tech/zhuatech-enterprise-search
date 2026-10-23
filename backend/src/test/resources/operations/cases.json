@@ -1,0 +1,65 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "eligibleCandidates": "#70",
+      "contextHits": "#10"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "tokenBudget": "199"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "contextHits": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "tokenBudget": "1999"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "contextHits": "#9"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "unauthorized": "90"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "unauthorized": "91",
+      "duplicates": "10"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "rerankLimit": "5"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "contextHits": "#5"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "tokensPerHit": "0"
+    },
+    "expected": {},
+    "error": true
+  }
+]
